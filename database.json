@@ -1,0 +1,14 @@
+{
+    "MACHENIKE G5Pro": {
+        "aliases": [
+            "2345:E02D"
+        ],
+        "hid_map_file": "maps/2345_e02d.json"
+    },
+    "8BitDo Ultimate 2C Wireless Controller": {
+        "aliases": [
+            "2DC8:301C"
+        ],
+        "hid_map_file": "maps/2dc8_301c.json"
+    }
+}
