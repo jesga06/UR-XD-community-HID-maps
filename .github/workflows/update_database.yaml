@@ -28,7 +28,9 @@ jobs:
 
       - name: Commit changes
         run: |
-          if git diff --quiet database.json; then
+          git add database.json
+
+          if git diff --cached --quiet --exit-code; then
             echo "database.json already up to date."
             exit 0
           fi
@@ -36,6 +38,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add database.json
           git commit -m "Auto-update database.json"
           git push
