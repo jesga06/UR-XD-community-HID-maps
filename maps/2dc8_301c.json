@@ -2,9 +2,9 @@
     "name": "8BitDo Ultimate 2C Wireless Controller",
     "vid": "2DC8",
     "pid": "301C",
-    "has_report_id": true,
+    "has_report_id": false,
     "reports": {
-        "1": {
+        "0_0": {
             "inputs": {
                 "a": {
                     "type": "button",
@@ -51,6 +51,22 @@
                     "byte": 2,
                     "bitmask": 16
                 },
+                "lx": {
+                    "type": "axis",
+                    "byte": 4,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 0.996,
+                    "range_confidence": 0.126
+                },
+                "ly": {
+                    "type": "axis",
+                    "byte": 5,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 0.996,
+                    "range_confidence": 0.157
+                },
                 "l3": {
                     "type": "button",
                     "byte": 2,
@@ -61,41 +77,21 @@
                     "byte": 2,
                     "bitmask": 64
                 },
-                "lx": {
-                    "type": "axis",
-                    "byte": 4,
-                    "length": 1,
-                    "center": true
-                },
-                "ly": {
-                    "type": "axis",
-                    "byte": 5,
-                    "length": 1,
-                    "center": true
-                },
-                "rx": {
-                    "type": "axis",
-                    "byte": 6,
-                    "length": 1,
-                    "center": true
-                },
-                "ry": {
-                    "type": "axis",
-                    "byte": 7,
-                    "length": 1,
-                    "center": true
-                },
                 "lt": {
                     "type": "trigger",
                     "byte": 9,
                     "length": 1,
-                    "is_analog": true
+                    "center": false,
+                    "is_analog": true,
+                    "range_confidence": 0.325
                 },
                 "rt": {
                     "type": "trigger",
                     "byte": 8,
                     "length": 1,
-                    "is_analog": true
+                    "center": false,
+                    "is_analog": true,
+                    "range_confidence": 1.0
                 },
                 "dpad": {
                     "type": "hat",
@@ -110,9 +106,28 @@
                     "type": "button",
                     "byte": 1,
                     "bitmask": 32
+                },
+                "rx": {
+                    "type": "axis",
+                    "byte": 6,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 0.949,
+                    "range_confidence": 0.134
+                },
+                "ry": {
+                    "type": "axis",
+                    "byte": 7,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 0.996,
+                    "range_confidence": 0.244
                 }
             }
         }
     },
+    "interfaces": [
+        0
+    ],
     "layout": "xbox"
 }

@@ -1,5 +1,5 @@
 {
-    "name": "MACHENIKE G5Pro",
+    "name": "Machenike G5 Pro",
     "vid": "2345",
     "pid": "E02D",
     "has_report_id": false,
@@ -8,119 +8,124 @@
             "inputs": {
                 "a": {
                     "type": "button",
-                    "byte": 0,
+                    "byte": 1,
                     "bitmask": 1
                 },
                 "b": {
                     "type": "button",
-                    "byte": 0,
+                    "byte": 1,
                     "bitmask": 2
                 },
                 "x": {
                     "type": "button",
-                    "byte": 0,
-                    "bitmask": 4
+                    "byte": 1,
+                    "bitmask": 8
                 },
                 "y": {
                     "type": "button",
-                    "byte": 0,
-                    "bitmask": 8
+                    "byte": 1,
+                    "bitmask": 16
                 },
                 "lb": {
                     "type": "button",
-                    "byte": 0,
-                    "bitmask": 16
+                    "byte": 1,
+                    "bitmask": 64
                 },
                 "rb": {
                     "type": "button",
-                    "byte": 0,
-                    "bitmask": 32
+                    "byte": 1,
+                    "bitmask": 128
                 },
                 "select": {
                     "type": "button",
-                    "byte": 1,
-                    "bitmask": 1
+                    "byte": 2,
+                    "bitmask": 4
                 },
                 "start": {
                     "type": "button",
-                    "byte": 1,
-                    "bitmask": 2
+                    "byte": 2,
+                    "bitmask": 8
                 },
                 "home": {
                     "type": "button",
-                    "byte": 1,
+                    "byte": 2,
                     "bitmask": 16
-                },
-                "lx": {
-                    "type": "axis",
-                    "byte": 3,
-                    "length": 1,
-                    "center": true
-                },
-                "rx": {
-                    "type": "axis",
-                    "byte": 5,
-                    "length": 1,
-                    "center": true
-                },
-                "ry": {
-                    "type": "axis",
-                    "byte": 6,
-                    "length": 1,
-                    "center": true
                 },
                 "l3": {
                     "type": "button",
-                    "byte": 1,
-                    "bitmask": 4
+                    "byte": 2,
+                    "bitmask": 32
                 },
                 "r3": {
                     "type": "button",
-                    "byte": 1,
-                    "bitmask": 8
+                    "byte": 2,
+                    "bitmask": 64
                 },
                 "dpad": {
                     "type": "hat",
-                    "byte": 2
+                    "byte": 3
+                },
+                "lx": {
+                    "type": "axis",
+                    "byte": 4,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 1.0,
+                    "range_confidence": 1.0
+                },
+                "ly": {
+                    "type": "axis",
+                    "byte": 5,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 1.0,
+                    "range_confidence": 1.0
+                },
+                "rx": {
+                    "type": "axis",
+                    "byte": 6,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 1.0,
+                    "range_confidence": 1.0
+                },
+                "ry": {
+                    "type": "axis",
+                    "byte": 7,
+                    "length": 1,
+                    "center": true,
+                    "centeredness": 1.0,
+                    "range_confidence": 1.0
                 }
             }
         },
         "2_0": {
             "inputs": {
-                "ly": {
-                    "type": "axis",
-                    "byte": 4,
-                    "length": 1,
-                    "center": true
-                },
                 "lt": {
                     "type": "trigger",
-                    "byte": 11,
+                    "byte": 1,
                     "length": 1,
                     "center": false,
-                    "is_analog": true
+                    "is_analog": true,
+                    "range_confidence": 1.0
                 },
                 "rt": {
                     "type": "trigger",
-                    "byte": 12,
+                    "byte": 2,
                     "length": 1,
                     "center": false,
-                    "is_analog": true
+                    "is_analog": true,
+                    "range_confidence": 1.0
                 },
                 "m1": {
                     "type": "button",
-                    "byte": 10,
+                    "byte": 3,
                     "bitmask": 1
                 },
                 "m2": {
                     "type": "button",
-                    "byte": 10,
+                    "byte": 3,
                     "bitmask": 2
-                },
-                "fn": {
-                    "type": "button",
-                    "byte": 10,
-                    "bitmask": 16
                 }
             }
         }
